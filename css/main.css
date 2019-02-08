@@ -1914,7 +1914,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #25ffff;
+  background: #ff672d;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2550,17 +2550,7 @@ ul.breadcrumb li+li:last-child {
 .header {
   position: relative;
   margin: 0 auto;
-  width: calc(100% - 20px);
-}
-@media (min-width: 1200px) {
-  .header {
-    width: 1160px;
-  }
-}
-@media (min-width: 1600px) {
-  .header {
-    width: 73%;
-  }
+  width: 70%;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .header {
@@ -2610,6 +2600,19 @@ ul.breadcrumb li+li:last-child {
   clear: both;
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  .main {
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .main {
+    padding-bottom: 100px;
+  }
+}
+.container .main-inner {
+  width: 70%;
+}
+@media (min-width: 768px) and (max-width: 991px) {
   .container .main-inner {
     width: auto;
   }
@@ -2623,7 +2626,7 @@ ul.breadcrumb li+li:last-child {
   float: right;
   box-sizing: border-box;
   padding: 40px;
-  width: calc(100% - 252px);
+  width: calc(100% - 253px);
   background: #fff;
   min-height: 700px;
   box-shadow: initial;
@@ -2647,7 +2650,7 @@ ul.breadcrumb li+li:last-child {
 .sidebar {
   position: static;
   float: left;
-  margin-left: -100%;
+  margin-top: 300px;
   width: 240px;
   background: #f5f7f9;
   box-shadow: none;
@@ -2666,20 +2669,19 @@ ul.breadcrumb li+li:last-child {
   display: none;
 }
 .footer-inner {
+  width: $main-desktop;
   padding-left: 260px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .footer-inner {
     width: auto;
     padding-left: 0 !important;
-    padding-right: 0 !important;
   }
 }
 @media (max-width: 767px) {
   .footer-inner {
     width: auto;
     padding-left: 0 !important;
-    padding-right: 0 !important;
   }
 }
 .sidebar-position-right .header-inner {
